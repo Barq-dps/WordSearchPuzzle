@@ -1,4 +1,4 @@
-﻿#include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
 #include <imgui.h>
@@ -17,7 +17,7 @@
 #include <filesystem>
 #include <fstream>
 #include <random>
-#include "WordSearchSolver.h"  // Must provide getGrid(), loadGrid(), solve(), etc.
+#include "WordSearchSolver.h"  
 
 namespace fs = std::filesystem;
 using json = nlohmann::json;
@@ -282,7 +282,7 @@ int main() {
                     selectedCells.clear();
                 }
                 ImGui::SameLine();
-                if (ImGui::Button("Check Word", ImVec2(250, 30))) {
+                if (ImGui::Button("Check Word                                                 ", ImVec2(250, 30))) {
                     bool correct = false;
                     int foundIndex = -1;
                     for (size_t k = 0; k < targetWords.size(); k++) {
@@ -381,12 +381,12 @@ int main() {
             if (ImGui::BeginPopupModal("Puzzle Completed", nullptr, ImGuiWindowFlags_AlwaysAutoResize)) {
                 ImGui::Text("Congratulations! You found all words!");
                 ImGui::Spacing();
-                if (ImGui::Button("Save & Exit", ImVec2(120, 30))) {
+                if (ImGui::Button("Save & Exit                               ", ImVec2(250, 30))) {
                     solver.saveGridToFile("puzzle_output.txt");
                     window.close();
                 }
-                ImGui::SameLine();
-                if (ImGui::Button("Back to Main Menu", ImVec2(150, 30))) {
+                ImGui::NewLine();
+                if (ImGui::Button("Back to Main Menu                         ", ImVec2(300, 30))) {
                     modeSelected = false;
                     selectedGridSize = 0;
                     targetWords.clear();
