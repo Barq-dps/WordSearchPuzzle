@@ -1,0 +1,12 @@
+Word Search Grid:
+W S F C P 
+F J O A Z 
+O A L O U 
+X S E V B 
+L L O D K 
+
+Find these words:
+COAX
+BOOS
+DOLL
+SLAP
