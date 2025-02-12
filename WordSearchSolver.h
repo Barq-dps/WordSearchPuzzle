@@ -12,16 +12,12 @@ private:
     // Places a word into the grid at a random valid position
     bool placeWordInGrid(const std::string& word);
 
-    // Fetches valid words of specified lengths from the API
-    //static std::vector<std::string> fetchValidWords(int wordCount, int minLen, int maxLen);
-
 public:
     WordSearchSolver();
     void loadGrid(int size);
     void displayGrid();
     std::vector<std::string> solve();
     void saveGridToFile(const std::string& filename);
-    //const std::vector<std::vector<char>>& getGrid() const;
     const std::vector<std::vector<char>>& getGrid() const {
         return grid;
     }
