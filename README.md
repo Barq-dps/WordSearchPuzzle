@@ -102,14 +102,6 @@ vcpkg install imgui:x64-windows
 ---
 ---
 
-## **🔧 Troubleshooting**
-### **❌ HTTPLIB Not Found**
-✔ Ensure the **HTTPLIB header file** is correctly included.  
-✔ If using `#define CPPHTTPLIB_OPENSSL_SUPPORT`, make sure OpenSSL is installed.
-
-### **❌ SFML Missing DLLs**
-✔ Copy SFML `.dll` files from `C:\SFML\bin` to your project’s `x64/Debug` folder.
-
 ### **❌ API Requests Not Working**
 ✔ Check your internet connection.  
 ✔ If the API is down, try a different word API.
